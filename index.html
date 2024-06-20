@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Buquês de Flores</title>
     <link rel="stylesheet" href="styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header>
-        <div class="logo">Beth buquês</div>
+        <div class="logo">Nome da Floricultura</div>
         <nav>
             <ul>
                 <li><a href="#inicio">Início</a></li>
@@ -20,17 +21,17 @@
     </header>
 
     <section class="hero" id="inicio">
-        <div class="cta">
+        <div class="cta" data-aos="fade-up">
             <h1>Encante com o Buquê Perfeito!</h1>
             <p>Compre o buquê ideal para qualquer ocasião e tenha a certeza de que vai surpreender quem você ama.</p>
             <a href="https://wa.me/seunumero" class="btn">Compre Agora no WhatsApp</a>
         </div>
     </section>
 
-    <section class="highlights">
+    <section class="highlights narrow-width" data-aos="fade-up">
         <h2>Por que escolher nossos buquês?</h2>
         <ul>
-            <li>Rosas artificais com chocolate</li>
+            <li>Flores Frescas</li>
             <li>Entrega Rápida</li>
             <li>Variedade de Opções</li>
             <li>Atendimento Personalizado</li>
@@ -38,17 +39,14 @@
     </section>
 
     <section class="products" id="produtos">
-        <h2>Nossos Buquês</h2>
-        <div class="product">
-            <div class="bq1">
-                <img src="buque rosas com ferrero.jpg" alt="Buquê Romântico">
-            </div>
+        <h2 data-aos="fade-up">Nossos Buquês</h2>
+        <div class="product" data-aos="fade-up" data-aos-delay="100">
+            <img src="buque rosas com ferrero.jpg" alt="Buquê Romântico">
             <h3>Buquê Romântico</h3>
-            <p>Rosas vermelhas com chocolates Ferrero Roche,<br>
-                perfeito para o Dia dos Namorados.</p>
+            <p>Rosas vermelhas, perfeito para o Dia dos Namorados.</p>
             <a href="https://wa.me/seunumero" class="btn">Peça pelo WhatsApp</a>
         </div>
-        <div class="product">
+        <div class="product" data-aos="fade-up" data-aos-delay="200">
             <img src="buque de morangos.jpg" alt="Buquê Elegante">
             <h3>Buquê Elegante</h3>
             <p>Lírios brancos, ideal para casamentos.</p>
@@ -58,15 +56,15 @@
     </section>
 
     <section class="testimonials">
-        <h2>O que nossos clientes dizem</h2>
-        <blockquote>"O buquê de rosas foi perfeito para o aniversário da minha esposa. Ela amou!" - João S.</blockquote>
-        <blockquote>"Excelente serviço e entrega muito rápida! Com certeza comprarei novamente." - Maria T.</blockquote>
-        <blockquote>"Os buquês são lindos e o atendimento é ótimo. Super recomendo!" - Paula R.</blockquote>
+        <h2 data-aos="fade-up">O que nossos clientes dizem</h2>
+        <blockquote data-aos="fade-up" data-aos-delay="100">"O buquê de rosas foi perfeito para o aniversário da minha esposa. Ela amou!" - João S.</blockquote>
+        <blockquote data-aos="fade-up" data-aos-delay="200">"Excelente serviço e flores frescas! Com certeza comprarei novamente." - Maria T.</blockquote>
+        <blockquote data-aos="fade-up" data-aos-delay="300">"Os buquês são lindos e o atendimento é ótimo. Super recomendo!" - Paula R.</blockquote>
     </section>
 
     <section class="contact" id="contato">
-        <h2>Quer saber mais? Fale com a gente pelo WhatsApp!</h2>
-        <form action="https://formspree.io/your-email" method="POST">
+        <h2 data-aos="fade-up">Quer saber mais? Fale com a gente pelo WhatsApp!</h2>
+        <form action="https://formspree.io/your-email" method="POST" data-aos="fade-up" data-aos-delay="100">
             <label for="name">Nome:</label>
             <input type="text" id="name" name="name">
             <label for="phone">Telefone (WhatsApp):</label>
@@ -91,10 +89,15 @@
             <a href="#"><img src="whatsapp-icon.png" alt="WhatsApp"></a>
         </div>
         <div class="contact-info">
-            <p>Endereço dos vendedores</p>
+            <p>Endereço da Floricultura</p>
             <p>Telefone: (xx) xxxx-xxxx</p>
             <p>Email: contato@floricultura.com</p>
         </div>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
